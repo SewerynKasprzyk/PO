@@ -15,7 +15,7 @@ private:
 	std::vector<double> a; // wspó³czynniki a
 	std::vector<double> b; // wspó³czynniki b
 
-	std::deque<double> x; // bufor wejœciowy
+	std::deque<double> u; // bufor wejœciowy
 	std::deque<double> y; // bufor wyjœciowy
 
 	unsigned k; // rz¹d opóŸnienia
