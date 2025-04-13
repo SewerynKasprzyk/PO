@@ -5,7 +5,7 @@
 #include "ModelARX.h"
 #include <cmath>
 
-#define DEBUG  // ustaw na MAIN aby skompilowaæ program docelowy / ustaw na DEBUG aby skompilowaæ program testujacy 
+#define MAIN  // ustaw na MAIN aby skompilowaæ program docelowy / ustaw na DEBUG aby skompilowaæ program testujacy 
 
 #ifdef DEBUG
 
@@ -149,7 +149,7 @@ void test_ModelARX_skokJednostkowy_3()
 	try
 	{
 		// Przygotowanie danych:
-		ModelARX instancjaTestowa({ -0.4,0.2 }, { 0.6, 0.3 }, 2, 0);
+		ModelARX instancjaTestowa({ -0.4,0.2 }, { 0.6, 0.3 }, 2, 0.0);
 		constexpr size_t LICZ_ITER = 30;
 		std::vector<double> sygWe(LICZ_ITER);      // pobudzenie modelu, 
 		std::vector<double> spodzSygWy(LICZ_ITER); // spodziewana sekwencja wy
@@ -195,7 +195,12 @@ int main()
 
 int main()
 {
-	//Twój program
+	ModelARX model(".\\model_zserializowany_input.txt");
+
+	// Serializacja modelu do pliku
+	model.serializuj(".\\model_zserializowany_output.txt");
+
+	return 0;
 }
 
 #endif

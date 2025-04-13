@@ -27,6 +27,10 @@
     <ClInclude Include="ModelARX.h" />
     <ClInclude Include="ObiektSISO.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="model_zserializowany_input.txt" />
+    <Text Include="model_zserializowany_output.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
