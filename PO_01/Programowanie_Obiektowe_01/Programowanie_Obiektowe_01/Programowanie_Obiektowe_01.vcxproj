@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\Downloads\lab1.cpp" />
+    <ClCompile Include="lab1.cpp" />
     <ClCompile Include="ModelARX.cpp" />
     <ClCompile Include="ObiektSISO.cpp" />
   </ItemGroup>
