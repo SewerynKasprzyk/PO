@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Dekoratory">
+      <UniqueIdentifier>{173ee799-0273-426a-8aaf-0d4fb5711c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Dekoratory">
+      <UniqueIdentifier>{c38f9821-dd33-4303-b0ff-cc986fa43f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Matlab">
+      <UniqueIdentifier>{4bfa2f93-2fd0-412d-8fa4-c4dd6930a74e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Sygnal">
+      <UniqueIdentifier>{cf5d0833-4cb5-49b4-84f5-a39b346d1c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Sygnal">
+      <UniqueIdentifier>{be075ea3-d400-4c9c-8779-38d5f7d957bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lab1.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="lab2.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelARX.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="RegulatorPID.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="DekoratorNasycenie.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="DekoratorProstokat.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="DekoratorSinus.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="DekoratorSzumBialy.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="DekoratorTrojkat.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Dekorator.cpp">
+      <Filter>Pliki źródłowe\Dekoratory</Filter>
+    </ClCompile>
+    <ClCompile Include="SygnalStaly.cpp">
+      <Filter>Pliki źródłowe\Sygnal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="model_zserializowany_input.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="model_zserializowany_output.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ModelARX.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="ObiektSISO.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="RegulatorPID.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="DekoratorNasycenie.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="DekoratorProstokat.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="DekoratorSinus.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="DekoratorSzumBialy.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="DekoratorTrojkat.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Dekorator.h">
+      <Filter>Pliki nagłówkowe\Dekoratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Sygnal.h">
+      <Filter>Pliki nagłówkowe\Sygnal</Filter>
+    </ClInclude>
+    <ClInclude Include="SygnalStaly.h">
+      <Filter>Pliki nagłówkowe\Sygnal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="symulacja.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="generator_only.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Generator.m">
+      <Filter>Pliki źródłowe\Matlab</Filter>
+    </None>
+    <None Include="SkryptDoMatlaba.m">
+      <Filter>Pliki źródłowe\Matlab</Filter>
+    </None>
+  </ItemGroup>
+</Project>
