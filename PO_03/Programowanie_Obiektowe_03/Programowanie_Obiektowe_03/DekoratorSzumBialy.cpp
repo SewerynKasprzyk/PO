@@ -5,16 +5,16 @@ DekoratorSzumBialy::DekoratorSzumBialy(std::unique_ptr<Sygnal> k, double odch)
 }
 
 double DekoratorSzumBialy::symuluj(int t) {
-    return komponent->symuluj(t) + rozklad(generator);
+    return this->komponent->symuluj(t) + this->rozklad(generator);
 }
 
 void DekoratorSzumBialy::serializuj(std::ostream& out) const {
     Dekorator::serializuj(out);
-    out << "DekoratorSzumBialy " << odchylenie << " ";
+    out << "DekoratorSzumBialy " << this->odchylenie << " ";
 }
 
 std::unique_ptr<Sygnal> DekoratorSzumBialy::deserializuj(std::istream& in) {
     double odch;
     in >> odch;
-    return std::make_unique<DekoratorSzumBialy>(std::move(komponent), odch);
+    return std::make_unique<DekoratorSzumBialy>(std::move(this->komponent), odch);
 }

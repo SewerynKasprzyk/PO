@@ -3,11 +3,11 @@
 SygnalStaly::SygnalStaly(double w) : wartosc(w) {}
 
 double SygnalStaly::symuluj(int t) {
-    return wartosc;
+    return this->wartosc;
 }
 
 void SygnalStaly::serializuj(std::ostream& out) const {
-    out << "SygnalStaly " << wartosc << " ";
+    out << "SygnalStaly " << this->wartosc << " ";
 }
 
 std::unique_ptr<Sygnal> SygnalStaly::deserializuj(std::istream& in) {

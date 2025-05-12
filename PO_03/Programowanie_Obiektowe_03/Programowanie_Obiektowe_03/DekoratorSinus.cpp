@@ -6,29 +6,29 @@ DekoratorSinus::DekoratorSinus(std::unique_ptr<Sygnal> k, double amp, double cze
     : Dekorator(std::move(k)), amplituda(amp), czestotliwosc(czest),
     y_prev1(0), y_prev2(0), t_prev(-1) {
     // Poprawiona inicjalizacja: generuj próbkê dla t=0 i t=1
-    y_prev1 = amplituda * std::sin(2 * M_PI * czestotliwosc * 1); // t=1
-    y_prev2 = 0; // t=0
+    this->y_prev1 = this->amplituda * std::sin(2 * M_PI * this->czestotliwosc * 1); // t=1
+    this->y_prev2 = 0; // t=0
 }
 
 double DekoratorSinus::symuluj(int t) {
     if (t < 0) return 0;
 
     // Aktualizuj t_prev dla wszystkich przypadków
-    if (t == t_prev + 1) {
-        double omega = 2 * M_PI * czestotliwosc;
-        double y_new = 2 * std::cos(omega) * y_prev1 - y_prev2;
-        y_prev2 = y_prev1;
-        y_prev1 = y_new;
-        t_prev = t;
-        return komponent->symuluj(t) + y_new;
+    if (t == this->t_prev + 1) {
+        double omega = 2 * M_PI * this->czestotliwosc;
+        double y_new = 2 * std::cos(omega) * this->y_prev1 - this->y_prev2;
+        this->y_prev2 = this->y_prev1;
+        this->y_prev1 = y_new;
+        this->t_prev = t;
+        return this->komponent->symuluj(t) + y_new;
     }
     else if (t == 0) {
-        t_prev = t;
-        return komponent->symuluj(t) + y_prev2; // y_prev2 odpowiada t=0
+        this->t_prev = t;
+        return this->komponent->symuluj(t) + this->y_prev2; // y_prev2 odpowiada t=0
     }
     else if (t == 1) {
-        t_prev = t;
-        return komponent->symuluj(t) + y_prev1; // y_prev1 odpowiada t=1
+        this->t_prev = t;
+        return this->komponent->symuluj(t) + this->y_prev1; // y_prev1 odpowiada t=1
     }
 
     throw std::runtime_error("Nieci¹g³e t dla sygna³u sinusoidalnego.");
@@ -36,11 +36,11 @@ double DekoratorSinus::symuluj(int t) {
 
 void DekoratorSinus::serializuj(std::ostream& out) const {
     Dekorator::serializuj(out);
-    out << "DekoratorSinus " << amplituda << " " << czestotliwosc << " ";
+    out << "DekoratorSinus " << this->amplituda << " " << this->czestotliwosc << " ";
 }
 
 std::unique_ptr<Sygnal> DekoratorSinus::deserializuj(std::istream& in) {
     double amp, czest;
     in >> amp >> czest;
-    return std::make_unique<DekoratorSinus>(std::move(komponent), amp, czest);
+    return std::make_unique<DekoratorSinus>(std::move(this->komponent), amp, czest);
 }
