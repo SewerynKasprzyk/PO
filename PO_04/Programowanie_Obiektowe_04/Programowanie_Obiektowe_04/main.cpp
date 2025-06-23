@@ -245,14 +245,43 @@ void uruchomPelnaSymulacje(Konfiguracja& config) {
         return;
     }
 
+
     // Create output directory
     fs::create_directory("pelna_symulacja_files");
 
     // Ustawienia domyœlne dla modelu i regulatora
     std::vector<double> a = { 0.4, -0.25 };
     std::vector<double> b = { 0.8, 0.1 };
-    ModelARX model(a, b, 1, 0.0);
-    RegulatorPID regulator(1.2, 8.0, 0.4);
+	unsigned k = 1; // Delay in discrete time steps
+	double kreg = 1.2, Ti = 8.0, Td = 0.4; // Default gain for PID regulator
+
+    std::cout << "Konfiguracja modelu\n";
+    std::cout << "Podaj wartosc a[0]\n";
+    std::cin >> a[0];
+
+    std::cout << "\nPodaj wartosc a[1]\n";
+    std::cin >> a[1];
+
+    std::cout << "\nPodaj wartosc b[0]\n";
+    std::cin >> b[0];
+
+    std::cout << "\nPodaj wartosc b[1]\n";
+    std::cin >> b[1];
+
+    std::cout << "Podaj wartosc opoznienia\n";
+ std::cin >> k;
+
+    std::cout << "Konfiguracja regulatora\n";
+    std::cout << "Podaj wartosc k\n";
+    std::cin >> kreg;
+    std::cout << "\nPodaj wartosc Ti\n";
+    std::cin >> Ti;
+    std::cout << "\nPodaj wartosc Td\n";
+    std::cin >> Td;
+
+    ModelARX model(a, b, k, 0.0);
+    RegulatorPID regulator(kreg, Ti, Td);
+
 
     int kroki = config.pobierzLiczbeKrokow();
     double wyjscie = 0.0;
