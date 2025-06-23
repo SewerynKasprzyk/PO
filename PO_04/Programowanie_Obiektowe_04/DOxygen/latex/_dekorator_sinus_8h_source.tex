@@ -1,0 +1,24 @@
+\doxysection{Dekorator\+Sinus.\+h}
+\hypertarget{_dekorator_sinus_8h_source}{}\label{_dekorator_sinus_8h_source}\index{Programowanie\_Obiektowe\_04/DekoratorSinus.h@{Programowanie\_Obiektowe\_04/DekoratorSinus.h}}
+\mbox{\hyperlink{_dekorator_sinus_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dekorator_8h}{Dekorator.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_sinus_ac913b0af10b27dc42331177681f5dc9c}{DekoratorSinus}}\ :\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ amplituda,\ czestotliwosc;\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ y\_prev1,\ y\_prev2;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ t\_prev;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_dekorator_sinus_ac913b0af10b27dc42331177681f5dc9c}{DekoratorSinus}}(std::unique\_ptr<Sygnal>\ k,\ \textcolor{keywordtype}{double}\ amp,\ \textcolor{keywordtype}{double}\ czest);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_sinus_a14fb85b870dceac980faf5d823af77cd}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_sinus_a84b450b7ca4cb984235e25b839cd87e2}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_sinus_af87d43dfa0245b6be812de9e4ccfcaf8}{klonuj}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,58 @@
+\doxysection{Prostokat Class Reference}
+\hypertarget{class_prostokat}{}\label{class_prostokat}\index{Prostokat@{Prostokat}}
+
+
+Inheritance diagram for Prostokat\+:
+% FIG 0
+
+
+Collaboration diagram for Prostokat\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_prostokat_a4824becf664055fa6519ac79555835db}\label{class_prostokat_a4824becf664055fa6519ac79555835db} 
+{\bfseries Prostokat} (double a, int o, double w)
+\item 
+\Hypertarget{class_prostokat_a6af5e04bb0dc7330a2dc1925b3e5022b}\label{class_prostokat_a6af5e04bb0dc7330a2dc1925b3e5022b} 
+double {\bfseries generuj} (int t) override
+\item 
+void \mbox{\hyperlink{class_prostokat_a4b6eb8afb95e58b458c57f52c3034d5d}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sygnal}{Sygnal}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{symuluj}} (int t)=0
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{klonuj}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_prostokat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_prostokat_a4b6eb8afb95e58b458c57f52c3034d5d}\index{Prostokat@{Prostokat}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!Prostokat@{Prostokat}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_prostokat_a4b6eb8afb95e58b458c57f52c3034d5d} 
+void Prostokat\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{Sygnal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Prostokat.\+h\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Prostokat.\+cpp\end{DoxyCompactItemize}

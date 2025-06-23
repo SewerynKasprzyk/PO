@@ -1,0 +1,95 @@
+\doxysection{Sygnal Class Reference}
+\hypertarget{class_sygnal}{}\label{class_sygnal}\index{Sygnal@{Sygnal}}
+
+
+Interface for signal generators.  
+
+
+
+
+{\ttfamily \#include $<$Sygnal.\+h$>$}
+
+
+
+Inheritance diagram for Sygnal\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{symuluj}} (int t)=0
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{serializuj}} (std\+::ostream \&out) const =0
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{klonuj}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for signal generators. 
+
+\label{doc-func-members}
+\Hypertarget{class_sygnal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}\index{Sygnal@{Sygnal}!klonuj@{klonuj}}
+\index{klonuj@{klonuj}!Sygnal@{Sygnal}}
+\doxysubsubsection{\texorpdfstring{klonuj()}{klonuj()}}
+{\footnotesize\ttfamily \label{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ Sygnal\+::klonuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clone the signal object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Copy of the signal 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dekorator_addcad58e14a3da99c386b6517befa4ec}{Dekorator}}, \mbox{\hyperlink{class_dekorator_nasycenie_a67f0b68db008ba15dfb5101e817cb9c8}{Dekorator\+Nasycenie}}, \mbox{\hyperlink{class_dekorator_prostokat_ad762b3cc141f98cff2e74d4754746344}{Dekorator\+Prostokat}}, \mbox{\hyperlink{class_dekorator_sinus_af87d43dfa0245b6be812de9e4ccfcaf8}{Dekorator\+Sinus}}, \mbox{\hyperlink{class_dekorator_szum_bialy_a8232adc7a4718326fb13ba9f3c0a525b}{Dekorator\+Szum\+Bialy}}, \mbox{\hyperlink{class_dekorator_trojkat_a6907a9c2d6d1b8d26bafc5f9102cf04a}{Dekorator\+Trojkat}}, and \mbox{\hyperlink{class_sygnal_staly_ab6e3404625beeb1af1c387cd31cb62fa}{Sygnal\+Staly}}.
+
+\Hypertarget{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}\index{Sygnal@{Sygnal}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!Sygnal@{Sygnal}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e} 
+virtual void Sygnal\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_dekorator_adf6097aa3320ecdd2a234c0e41bd7a0c}{Dekorator}}, \mbox{\hyperlink{class_dekorator_nasycenie_a49adea202b3304b1c7b1179726225b56}{Dekorator\+Nasycenie}}, \mbox{\hyperlink{class_dekorator_prostokat_a69fd7ad665eacbdac3f40ea168c856e5}{Dekorator\+Prostokat}}, \mbox{\hyperlink{class_dekorator_sinus_a84b450b7ca4cb984235e25b839cd87e2}{Dekorator\+Sinus}}, \mbox{\hyperlink{class_dekorator_szum_bialy_adf591683925b26d83e2df007c7716b7b}{Dekorator\+Szum\+Bialy}}, \mbox{\hyperlink{class_dekorator_trojkat_ac84230b59ca8974a358db1f9a9cbcaf1}{Dekorator\+Trojkat}}, \mbox{\hyperlink{class_nasycenie_addcf69950ac7b0a5d726f22609be005a}{Nasycenie}}, \mbox{\hyperlink{class_prostokat_a4b6eb8afb95e58b458c57f52c3034d5d}{Prostokat}}, \mbox{\hyperlink{class_sinus_a607aad594deca460259ca96fc03176c3}{Sinus}}, \mbox{\hyperlink{class_stala_acef8e403810fdef535ed48191b1ac42f}{Stala}}, \mbox{\hyperlink{class_sygnal_staly_a7fb24bc52b613b65e5f3b292b957b895}{Sygnal\+Staly}}, \mbox{\hyperlink{class_sygnal_zlozony_acb2c57f248110e7e94e473055cd88d1d}{Sygnal\+Zlozony}}, \mbox{\hyperlink{class_szum_bialy_a14df8f3eb96627fd6b46461f65bea2b6}{Szum\+Bialy}}, and \mbox{\hyperlink{class_trojkat_ac8ac73effddb07b6691ba58ec7702067}{Trojkat}}.
+
+\Hypertarget{class_sygnal_ae46f523699f3346a704593a3bde26a07}\index{Sygnal@{Sygnal}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!Sygnal@{Sygnal}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_sygnal_ae46f523699f3346a704593a3bde26a07} 
+virtual double Sygnal\+::symuluj (\begin{DoxyParamCaption}\item[{int}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Simulate signal value at time t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Signal value 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dekorator_a667f8b465e1785c893432b585c6c77a2}{Dekorator}}, \mbox{\hyperlink{class_dekorator_nasycenie_a521551ee6a982b79d5e2c36a1661535c}{Dekorator\+Nasycenie}}, \mbox{\hyperlink{class_dekorator_prostokat_a58de6c33367365151b3b6f83e5564ebc}{Dekorator\+Prostokat}}, \mbox{\hyperlink{class_dekorator_sinus_a14fb85b870dceac980faf5d823af77cd}{Dekorator\+Sinus}}, \mbox{\hyperlink{class_dekorator_szum_bialy_a7307ae751677fc5f660d6be0f4a38c67}{Dekorator\+Szum\+Bialy}}, \mbox{\hyperlink{class_dekorator_trojkat_aaf27acac2c0cc2654073a73be07a1f05}{Dekorator\+Trojkat}}, and \mbox{\hyperlink{class_sygnal_staly_a22aa76ef6cb0d57b7714de02884375da}{Sygnal\+Staly}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_sygnal_8h}{Sygnal.\+h}}\end{DoxyCompactItemize}

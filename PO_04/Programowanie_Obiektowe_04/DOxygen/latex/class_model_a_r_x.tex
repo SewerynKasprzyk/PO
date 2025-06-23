@@ -1,0 +1,135 @@
+\doxysection{Model\+ARX Class Reference}
+\hypertarget{class_model_a_r_x}{}\label{class_model_a_r_x}\index{ModelARX@{ModelARX}}
+
+
+ARX (Auto\+Regressive with e\+Xogenous input) model implementation.  
+
+
+
+
+{\ttfamily \#include $<$Model\+ARX.\+h$>$}
+
+
+
+Inheritance diagram for Model\+ARX\+:
+% FIG 0
+
+
+Collaboration diagram for Model\+ARX\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0}{Model\+ARX}} (std\+::vector$<$ double $>$ a, std\+::vector$<$ double $>$ b, unsigned k, double zmienna)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a_r_x_ae745a9863b191c7e6beac141640eff83}{Model\+ARX}} (const std\+::string \&nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Constructor from configuration file. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_model_a_r_x_a2bf5d466e1ccf49bc6cae2bbc236770e}{symuluj}} (double u) override
+\begin{DoxyCompactList}\small\item\em Simulate system output for given input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a_r_x_a6af8f673e169e81692692d52176bb04a}{serializuj}} (const std\+::string \&nazwa\+Pliku) const
+\begin{DoxyCompactList}\small\item\em Serialize model parameters to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ARX (Auto\+Regressive with e\+Xogenous input) model implementation. 
+
+This class implements a discrete-\/time ARX model with optional noise disturbance. The model follows the equation\+: y(k) + a1\texorpdfstring{$\ast$}{*}y(k-\/1) + ... + an\texorpdfstring{$\ast$}{*}y(k-\/n) = b0\texorpdfstring{$\ast$}{*}u(k-\/d) + ... + bm\texorpdfstring{$\ast$}{*}u(k-\/d-\/m) + e(k) where e(k) is optional Gaussian noise. 
+
+\label{doc-constructors}
+\Hypertarget{class_model_a_r_x_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0}\index{ModelARX@{ModelARX}!ModelARX@{ModelARX}}
+\index{ModelARX@{ModelARX}!ModelARX@{ModelARX}}
+\doxysubsubsection{\texorpdfstring{ModelARX()}{ModelARX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0} 
+Model\+ARX\+::\+Model\+ARX (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{a}{, }\item[{std\+::vector$<$ double $>$}]{b}{, }\item[{unsigned}]{k}{, }\item[{double}]{zmienna}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector of autoregressive coefficients (a1 to an) \\
+\hline
+{\em b} & Vector of input coefficients (b0 to bm) \\
+\hline
+{\em k} & Input delay (discrete time steps) \\
+\hline
+{\em zmienna} & Noise standard deviation (set to 0 for no noise) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_model_a_r_x_ae745a9863b191c7e6beac141640eff83}\index{ModelARX@{ModelARX}!ModelARX@{ModelARX}}
+\index{ModelARX@{ModelARX}!ModelARX@{ModelARX}}
+\doxysubsubsection{\texorpdfstring{ModelARX()}{ModelARX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_model_a_r_x_ae745a9863b191c7e6beac141640eff83} 
+Model\+ARX\+::\+Model\+ARX (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption})}
+
+
+
+Constructor from configuration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Path to configuration file containing model parameters \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if file cannot be read or is malformed \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{class_model_a_r_x_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_model_a_r_x_a6af8f673e169e81692692d52176bb04a}\index{ModelARX@{ModelARX}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!ModelARX@{ModelARX}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_model_a_r_x_a6af8f673e169e81692692d52176bb04a} 
+void Model\+ARX\+::serializuj (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption}) const}
+
+
+
+Serialize model parameters to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Output file path \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if file cannot be written \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_model_a_r_x_a2bf5d466e1ccf49bc6cae2bbc236770e}\index{ModelARX@{ModelARX}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!ModelARX@{ModelARX}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_model_a_r_x_a2bf5d466e1ccf49bc6cae2bbc236770e} 
+double Model\+ARX\+::symuluj (\begin{DoxyParamCaption}\item[{double}]{u}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate system output for given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & Input value ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Output value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_obiekt_s_i_s_o_afaa0de278c2cafa27902026a01537809}{Obiekt\+SISO}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Model\+ARX.\+h\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Model\+ARX.\+cpp\end{DoxyCompactItemize}

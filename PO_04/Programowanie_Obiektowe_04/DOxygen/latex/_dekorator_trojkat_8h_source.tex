@@ -1,0 +1,23 @@
+\doxysection{Dekorator\+Trojkat.\+h}
+\hypertarget{_dekorator_trojkat_8h_source}{}\label{_dekorator_trojkat_8h_source}\index{Programowanie\_Obiektowe\_04/DekoratorTrojkat.h@{Programowanie\_Obiektowe\_04/DekoratorTrojkat.h}}
+\mbox{\hyperlink{_dekorator_trojkat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dekorator_8h}{Dekorator.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_trojkat_acfe5b9fb9987fd1237d35a3f5d235afb}{DekoratorTrojkat}}\ :\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ amplituda;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ okres;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ wypelnienie;\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_dekorator_trojkat_acfe5b9fb9987fd1237d35a3f5d235afb}{DekoratorTrojkat}}(std::unique\_ptr<Sygnal>\ k,\ \textcolor{keywordtype}{double}\ amp,\ \textcolor{keywordtype}{int}\ okr,\ \textcolor{keywordtype}{double}\ wyp);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_trojkat_aaf27acac2c0cc2654073a73be07a1f05}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_trojkat_ac84230b59ca8974a358db1f9a9cbcaf1}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_trojkat_a6907a9c2d6d1b8d26bafc5f9102cf04a}{klonuj}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

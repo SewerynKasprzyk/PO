@@ -1,0 +1,19 @@
+\doxysection{Nasycenie.\+h}
+\hypertarget{_nasycenie_8h_source}{}\label{_nasycenie_8h_source}\index{Programowanie\_Obiektowe\_04/Nasycenie.h@{Programowanie\_Obiektowe\_04/Nasycenie.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }Nasycenie\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sygnal}{Sygnal}}\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ std::unique\_ptr<Sygnal>\ component;}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{double}\ max\_amplitude;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ Nasycenie(std::unique\_ptr<Sygnal>\ s,\ \textcolor{keywordtype}{double}\ max);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ generuj(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nasycenie_addcf69950ac7b0a5d726f22609be005a}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00013\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,97 @@
+\doxysection{Konfiguracja Class Reference}
+\hypertarget{class_konfiguracja}{}\label{class_konfiguracja}\index{Konfiguracja@{Konfiguracja}}
+
+
+Holds configuration settings for the control system simulation.  
+
+
+
+
+{\ttfamily \#include $<$Konfiguracja.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_konfiguracja_a8dcf2177319b9b457898d083b1309020}\label{class_konfiguracja_a8dcf2177319b9b457898d083b1309020} 
+{\bfseries Konfiguracja} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_konfiguracja_a8ce4894b6144eda0dff0211ac0e0535d}{wczytaj}} (const std\+::string \&nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Load configuration from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_konfiguracja_adbeb8aab2487cb5bc875dddca9fe2553}{zapisz}} (const std\+::string \&nazwa\+Pliku) const
+\begin{DoxyCompactList}\small\item\em Save configuration to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Setters}\par
+{\em Methods used to configure the simulation parameters }\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_konfiguracja_a26fc0f26fe45061121bed86c4ac7ec2e}\label{class_konfiguracja_a26fc0f26fe45061121bed86c4ac7ec2e} 
+void {\bfseries ustaw\+Petle} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_petla_u_a_r}{Petla\+UAR}} $>$ nowa\+Petla)
+\item 
+\Hypertarget{class_konfiguracja_a1e5d644b3eb36e8165d89fd7649a58ef}\label{class_konfiguracja_a1e5d644b3eb36e8165d89fd7649a58ef} 
+void {\bfseries ustaw\+Generator} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ nowy\+Generator)
+\item 
+\Hypertarget{class_konfiguracja_a672fe82f8257253cfefd309013fa3550}\label{class_konfiguracja_a672fe82f8257253cfefd309013fa3550} 
+void {\bfseries ustaw\+Liczbe\+Krokow} (int kroki)
+\item 
+\Hypertarget{class_konfiguracja_ab94e403e99629b0c9eb199535197b748}\label{class_konfiguracja_ab94e403e99629b0c9eb199535197b748} 
+void {\bfseries ustaw\+Zamknieta} (bool stan)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters}\par
+{\em Methods used to retrieve the current configuration state }\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_konfiguracja_a44f8f12b4afed9d3e4ba11a4dbf6b91b}\label{class_konfiguracja_a44f8f12b4afed9d3e4ba11a4dbf6b91b} 
+\mbox{\hyperlink{class_petla_u_a_r}{Petla\+UAR}} \texorpdfstring{$\ast$}{*} {\bfseries pobierz\+Petle} () const
+\item 
+\Hypertarget{class_konfiguracja_aa19432a9b3db5391e19d0821c17c33d9}\label{class_konfiguracja_aa19432a9b3db5391e19d0821c17c33d9} 
+\mbox{\hyperlink{class_sygnal}{Sygnal}} \texorpdfstring{$\ast$}{*} {\bfseries pobierz\+Generator} () const
+\item 
+\Hypertarget{class_konfiguracja_a9c12acc5b4cbb2ff76827659b54a9e1c}\label{class_konfiguracja_a9c12acc5b4cbb2ff76827659b54a9e1c} 
+int {\bfseries pobierz\+Liczbe\+Krokow} () const
+\item 
+\Hypertarget{class_konfiguracja_a87c32b7df458bc79854b30fda223a0c9}\label{class_konfiguracja_a87c32b7df458bc79854b30fda223a0c9} 
+bool {\bfseries czy\+Zamknieta} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Holds configuration settings for the control system simulation. 
+
+\label{doc-func-members}
+\Hypertarget{class_konfiguracja_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_konfiguracja_a8ce4894b6144eda0dff0211ac0e0535d}\index{Konfiguracja@{Konfiguracja}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!Konfiguracja@{Konfiguracja}}
+\doxysubsubsection{\texorpdfstring{wczytaj()}{wczytaj()}}
+{\footnotesize\ttfamily \label{class_konfiguracja_a8ce4894b6144eda0dff0211ac0e0535d} 
+void Konfiguracja\+::wczytaj (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption})}
+
+
+
+Load configuration from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Name of the file to load \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_konfiguracja_adbeb8aab2487cb5bc875dddca9fe2553}\index{Konfiguracja@{Konfiguracja}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!Konfiguracja@{Konfiguracja}}
+\doxysubsubsection{\texorpdfstring{zapisz()}{zapisz()}}
+{\footnotesize\ttfamily \label{class_konfiguracja_adbeb8aab2487cb5bc875dddca9fe2553} 
+void Konfiguracja\+::zapisz (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption}) const}
+
+
+
+Save configuration to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Name of the file to save to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_konfiguracja_8h}{Konfiguracja.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Konfiguracja.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\doxysection{Obiekt\+Statyczny Class Reference}
+\hypertarget{class_obiekt_statyczny}{}\label{class_obiekt_statyczny}\index{ObiektStatyczny@{ObiektStatyczny}}
+
+
+Represents a static SISO object with output range limits.  
+
+
+
+
+{\ttfamily \#include $<$Obiekt\+Statyczny.\+h$>$}
+
+
+
+Inheritance diagram for Obiekt\+Statyczny\+:
+% FIG 0
+
+
+Collaboration diagram for Obiekt\+Statyczny\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obiekt_statyczny_aca9d2652df9ace8931a5b7daf4757a1f}{Obiekt\+Statyczny}} (double d, double g)
+\begin{DoxyCompactList}\small\item\em Construct static object with given limits. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt_statyczny_a98aeee68fda67b4131f02e91ca238ee5}{Obiekt\+Statyczny}} (const std\+::string \&plik)
+\begin{DoxyCompactList}\small\item\em Construct static object from file. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_obiekt_statyczny_a1fffa49823dae66839f9c894a2e112ea}{symuluj}} (double x) override
+\begin{DoxyCompactList}\small\item\em Simulate system output for given input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obiekt_statyczny_a067814858f32cf549a5207c858b3c75b}{serializuj}} (const std\+::string \&plik) const
+\begin{DoxyCompactList}\small\item\em Serialize the object to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a static SISO object with output range limits. 
+
+\label{doc-constructors}
+\Hypertarget{class_obiekt_statyczny_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_obiekt_statyczny_aca9d2652df9ace8931a5b7daf4757a1f}\index{ObiektStatyczny@{ObiektStatyczny}!ObiektStatyczny@{ObiektStatyczny}}
+\index{ObiektStatyczny@{ObiektStatyczny}!ObiektStatyczny@{ObiektStatyczny}}
+\doxysubsubsection{\texorpdfstring{ObiektStatyczny()}{ObiektStatyczny()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_obiekt_statyczny_aca9d2652df9ace8931a5b7daf4757a1f} 
+Obiekt\+Statyczny\+::\+Obiekt\+Statyczny (\begin{DoxyParamCaption}\item[{double}]{d}{, }\item[{double}]{g}{}\end{DoxyParamCaption})}
+
+
+
+Construct static object with given limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Lower bound \\
+\hline
+{\em g} & Upper bound \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_obiekt_statyczny_a98aeee68fda67b4131f02e91ca238ee5}\index{ObiektStatyczny@{ObiektStatyczny}!ObiektStatyczny@{ObiektStatyczny}}
+\index{ObiektStatyczny@{ObiektStatyczny}!ObiektStatyczny@{ObiektStatyczny}}
+\doxysubsubsection{\texorpdfstring{ObiektStatyczny()}{ObiektStatyczny()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_obiekt_statyczny_a98aeee68fda67b4131f02e91ca238ee5} 
+Obiekt\+Statyczny\+::\+Obiekt\+Statyczny (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plik}{}\end{DoxyParamCaption})}
+
+
+
+Construct static object from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plik} & File containing object data \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_obiekt_statyczny_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_obiekt_statyczny_a067814858f32cf549a5207c858b3c75b}\index{ObiektStatyczny@{ObiektStatyczny}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!ObiektStatyczny@{ObiektStatyczny}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_obiekt_statyczny_a067814858f32cf549a5207c858b3c75b} 
+void Obiekt\+Statyczny\+::serializuj (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plik}{}\end{DoxyParamCaption}) const}
+
+
+
+Serialize the object to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plik} & Target file path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_obiekt_statyczny_a1fffa49823dae66839f9c894a2e112ea}\index{ObiektStatyczny@{ObiektStatyczny}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!ObiektStatyczny@{ObiektStatyczny}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_obiekt_statyczny_a1fffa49823dae66839f9c894a2e112ea} 
+double Obiekt\+Statyczny\+::symuluj (\begin{DoxyParamCaption}\item[{double}]{u}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate system output for given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & Input value ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Output value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_obiekt_s_i_s_o_afaa0de278c2cafa27902026a01537809}{Obiekt\+SISO}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_obiekt_statyczny_8h}{Obiekt\+Statyczny.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Obiekt\+Statyczny.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\doxysection{Dekorator\+Prostokat Class Reference}
+\hypertarget{class_dekorator_prostokat}{}\label{class_dekorator_prostokat}\index{DekoratorProstokat@{DekoratorProstokat}}
+
+
+Rectangular wave signal decorator.  
+
+
+
+
+{\ttfamily \#include $<$Dekorator\+Prostokat.\+h$>$}
+
+
+
+Inheritance diagram for Dekorator\+Prostokat\+:
+% FIG 0
+
+
+Collaboration diagram for Dekorator\+Prostokat\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_prostokat_a4c3c9d01eec26544b02bced6c690ed77}{Dekorator\+Prostokat}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k, double amp, int okr, double wyp)
+\begin{DoxyCompactList}\small\item\em Construct a new rectangular wave decorator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dekorator_prostokat_a58de6c33367365151b3b6f83e5564ebc}{symuluj}} (int t) override
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dekorator_prostokat_a69fd7ad665eacbdac3f40ea168c856e5}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_prostokat_ad762b3cc141f98cff2e74d4754746344}{klonuj}} () const override
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_dekorator}{Dekorator} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_af343b13347ed5649d5b98be51667fa20}{komponent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rectangular wave signal decorator. 
+
+\label{doc-constructors}
+\Hypertarget{class_dekorator_prostokat_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dekorator_prostokat_a4c3c9d01eec26544b02bced6c690ed77}\index{DekoratorProstokat@{DekoratorProstokat}!DekoratorProstokat@{DekoratorProstokat}}
+\index{DekoratorProstokat@{DekoratorProstokat}!DekoratorProstokat@{DekoratorProstokat}}
+\doxysubsubsection{\texorpdfstring{DekoratorProstokat()}{DekoratorProstokat()}}
+{\footnotesize\ttfamily \label{class_dekorator_prostokat_a4c3c9d01eec26544b02bced6c690ed77} 
+Dekorator\+Prostokat\+::\+Dekorator\+Prostokat (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$}]{k}{, }\item[{double}]{amp}{, }\item[{int}]{okr}{, }\item[{double}]{wyp}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new rectangular wave decorator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Signal to decorate \\
+\hline
+{\em amp} & Amplitude \\
+\hline
+{\em okr} & Period \\
+\hline
+{\em wyp} & Duty cycle \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dekorator_prostokat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dekorator_prostokat_ad762b3cc141f98cff2e74d4754746344}\index{DekoratorProstokat@{DekoratorProstokat}!klonuj@{klonuj}}
+\index{klonuj@{klonuj}!DekoratorProstokat@{DekoratorProstokat}}
+\doxysubsubsection{\texorpdfstring{klonuj()}{klonuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_prostokat_ad762b3cc141f98cff2e74d4754746344} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ Dekorator\+Prostokat\+::klonuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clone the signal object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Copy of the signal 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_addcad58e14a3da99c386b6517befa4ec}{Dekorator}}.
+
+\Hypertarget{class_dekorator_prostokat_a69fd7ad665eacbdac3f40ea168c856e5}\index{DekoratorProstokat@{DekoratorProstokat}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!DekoratorProstokat@{DekoratorProstokat}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_prostokat_a69fd7ad665eacbdac3f40ea168c856e5} 
+void Dekorator\+Prostokat\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_dekorator_adf6097aa3320ecdd2a234c0e41bd7a0c}{Dekorator}}.
+
+\Hypertarget{class_dekorator_prostokat_a58de6c33367365151b3b6f83e5564ebc}\index{DekoratorProstokat@{DekoratorProstokat}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!DekoratorProstokat@{DekoratorProstokat}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_dekorator_prostokat_a58de6c33367365151b3b6f83e5564ebc} 
+double Dekorator\+Prostokat\+::symuluj (\begin{DoxyParamCaption}\item[{int}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate signal value at time t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Signal value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_a667f8b465e1785c893432b585c6c77a2}{Dekorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_dekorator_prostokat_8h}{Dekorator\+Prostokat.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Dekorator\+Prostokat.\+cpp\end{DoxyCompactItemize}

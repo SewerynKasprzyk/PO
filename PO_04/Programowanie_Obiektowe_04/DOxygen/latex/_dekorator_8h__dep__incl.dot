@@ -1,0 +1,18 @@
+digraph "Programowanie_Obiektowe_04/Dekorator.h"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="Programowanie_Obiektowe\l_04/Dekorator.h",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Base decorator class for signal processing (Decorator Pattern)"];
+  Node1 -> Node2 [id="edge6_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Programowanie_Obiektowe\l_04/DekoratorNasycenie.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_dekorator_nasycenie_8h.html",tooltip="Decorator that applies saturation (clipping) to a signal."];
+  Node1 -> Node3 [id="edge7_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Programowanie_Obiektowe\l_04/DekoratorProstokat.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_dekorator_prostokat_8h.html",tooltip="Decorator that applies rectangular wave modulation."];
+  Node1 -> Node4 [id="edge8_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Programowanie_Obiektowe\l_04/DekoratorSinus.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_dekorator_sinus_8h.html",tooltip="Decorator that applies sinusoidal modulation."];
+  Node1 -> Node5 [id="edge9_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Programowanie_Obiektowe\l_04/DekoratorSzumBialy.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_dekorator_szum_bialy_8h.html",tooltip="Decorator that adds white noise to a signal."];
+  Node1 -> Node6 [id="edge10_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Programowanie_Obiektowe\l_04/DekoratorTrojkat.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$_dekorator_trojkat_8h.html",tooltip="Decorator that applies triangular wave modulation."];
+}

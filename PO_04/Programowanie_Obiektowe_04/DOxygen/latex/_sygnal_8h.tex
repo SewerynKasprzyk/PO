@@ -1,0 +1,52 @@
+\doxysection{Programowanie\+\_\+\+Obiektowe\+\_\+04/\+Sygnal.h File Reference}
+\hypertarget{_sygnal_8h}{}\label{_sygnal_8h}\index{Programowanie\_Obiektowe\_04/Sygnal.h@{Programowanie\_Obiektowe\_04/Sygnal.h}}
+
+
+Abstract base class for all signal types.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+Include dependency graph for Sygnal.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sygnal}{Sygnal}}
+\begin{DoxyCompactList}\small\item\em Interface for signal generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{_sygnal_8h_abbc18fc900c43f170b48612a4ac5f3a2}{deserializuj\+Sygnal}} (std\+::istream \&in)
+\begin{DoxyCompactList}\small\item\em Deserialize a signal object from input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all signal types. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{_sygnal_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_sygnal_8h_abbc18fc900c43f170b48612a4ac5f3a2}\index{Sygnal.h@{Sygnal.h}!deserializujSygnal@{deserializujSygnal}}
+\index{deserializujSygnal@{deserializujSygnal}!Sygnal.h@{Sygnal.h}}
+\doxysubsubsection{\texorpdfstring{deserializujSygnal()}{deserializujSygnal()}}
+{\footnotesize\ttfamily \label{_sygnal_8h_abbc18fc900c43f170b48612a4ac5f3a2} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ deserializuj\+Sygnal (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in}{}\end{DoxyParamCaption})}
+
+
+
+Deserialize a signal object from input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Deserialized signal 
+\end{DoxyReturn}

@@ -1,0 +1,23 @@
+\doxysection{Dekorator.\+h}
+\hypertarget{_dekorator_8h_source}{}\label{_dekorator_8h_source}\index{Programowanie\_Obiektowe\_04/Dekorator.h@{Programowanie\_Obiektowe\_04/Dekorator.h}}
+\mbox{\hyperlink{_dekorator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}\ :\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sygnal}{Sygnal}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_af343b13347ed5649d5b98be51667fa20}{komponent}};\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}(std::unique\_ptr<Sygnal>\ k);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_a667f8b465e1785c893432b585c6c77a2}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override}\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_adf6097aa3320ecdd2a234c0e41bd7a0c}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override}\ =\ 0;}
+\DoxyCodeLine{00027\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_addcad58e14a3da99c386b6517befa4ec}{klonuj}}()\ \textcolor{keyword}{const\ override}\ =\ 0;}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\doxysection{Regulator\+PID.\+h}
+\hypertarget{_regulator_p_i_d_8h_source}{}\label{_regulator_p_i_d_8h_source}\index{Programowanie\_Obiektowe\_04/RegulatorPID.h@{Programowanie\_Obiektowe\_04/RegulatorPID.h}}
+\mbox{\hyperlink{_regulator_p_i_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obiekt_s_i_s_o_8h}{ObiektSISO.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{RegulatorPID}}\ :\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obiekt_s_i_s_o}{ObiektSISO}}\ }
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{RegulatorPID}}(\textcolor{keywordtype}{double}\ k);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{RegulatorPID}}(\textcolor{keywordtype}{double}\ k,\ \textcolor{keywordtype}{double}\ Ti);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{RegulatorPID}}(\textcolor{keywordtype}{double}\ k,\ \textcolor{keywordtype}{double}\ Ti,\ \textcolor{keywordtype}{double}\ Td);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_regulator_p_i_d_a95f8ff7746e07b450013c4707aa4cc1a}{symuluj}}(\textcolor{keywordtype}{double}\ uchyb)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{RegulatorPID}}(\textcolor{keyword}{const}\ std::string\&\ plik);\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_regulator_p_i_d_a9d74267b0547cce0e95d91321cad6c0a}{serializuj}}(\textcolor{keyword}{const}\ std::string\&\ plik)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ k;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{double}\ Ti;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ Td;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{double}\ suma\_uchybow;\ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{double}\ uchyb\_poprzedni;\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ sprawdzNastawy()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00050\ \};}
+
+\end{DoxyCode}

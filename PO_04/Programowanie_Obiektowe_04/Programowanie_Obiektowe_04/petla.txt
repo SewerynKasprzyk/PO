@@ -1,0 +1,9 @@
+typ=PetlaUAR
+zamknieta=1
+komponenty=3
+plik0=komponent0.txt
+typ0=RegulatorPID
+plik1=komponent1.txt
+typ1=ObiektStatyczny
+plik2=komponent2.txt
+typ2=ModelARX

@@ -1,0 +1,24 @@
+\doxysection{Sygnal.\+h}
+\hypertarget{_sygnal_8h_source}{}\label{_sygnal_8h_source}\index{Programowanie\_Obiektowe\_04/Sygnal.h@{Programowanie\_Obiektowe\_04/Sygnal.h}}
+\mbox{\hyperlink{_sygnal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sygnal}{Sygnal}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_sygnal}{\string~Sygnal}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ =\ 0;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{klonuj}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{_sygnal_8h_abbc18fc900c43f170b48612a4ac5f3a2}{deserializujSygnal}}(std::istream\&\ in);}
+
+\end{DoxyCode}

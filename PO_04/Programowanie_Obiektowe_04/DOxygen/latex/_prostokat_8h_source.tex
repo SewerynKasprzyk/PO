@@ -1,0 +1,18 @@
+\doxysection{Prostokat.\+h}
+\hypertarget{_prostokat_8h_source}{}\label{_prostokat_8h_source}\index{Programowanie\_Obiektowe\_04/Prostokat.h@{Programowanie\_Obiektowe\_04/Prostokat.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }Prostokat\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sygnal}{Sygnal}}\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{double}\ amplituda;}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ okres;}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{double}\ wypelnienie;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ Prostokat(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{int}\ o,\ \textcolor{keywordtype}{double}\ w);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ generuj(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_prostokat_a4b6eb8afb95e58b458c57f52c3034d5d}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00012\ \};}
+
+\end{DoxyCode}

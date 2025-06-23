@@ -1,0 +1,185 @@
+\doxysection{Petla\+UAR Class Reference}
+\hypertarget{class_petla_u_a_r}{}\label{class_petla_u_a_r}\index{PetlaUAR@{PetlaUAR}}
+
+
+Represents a control loop composed of multiple SISO components.  
+
+
+
+
+{\ttfamily \#include $<$Petla\+UAR.\+h$>$}
+
+
+
+Inheritance diagram for Petla\+UAR\+:
+% FIG 0
+
+
+Collaboration diagram for Petla\+UAR\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_petla_u_a_r_adab9510fae15086640c1ecfea5fa5446}{symuluj}} (double x) override
+\begin{DoxyCompactList}\small\item\em Simulate the loop response for given input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_a0151672321da9c7484b84a75069d8bc6}{ustaw\+Zamknieta}} (bool stan)
+\begin{DoxyCompactList}\small\item\em Set loop mode to open or closed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_a27ac5205a6323c6a7d071d9be4361bee}{dodaj\+Komponent}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt_s_i_s_o}{Obiekt\+SISO}} $>$ obiekt, const std\+::string \&typ)
+\begin{DoxyCompactList}\small\item\em Add a new component to the loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_aac7579df02bc3689fd7483b43e793e90}{dodaj\+Komponent\+Na\+Pozycji}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt_s_i_s_o}{Obiekt\+SISO}} $>$ obiekt, size\+\_\+t index, const std\+::string \&typ)
+\begin{DoxyCompactList}\small\item\em Insert a component at a specific position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_aef634112c3fe4c4e30c81e3b9ceec83f}{usun\+Komponent}} (size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Remove a component from the loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_ab5f2842bd9a7736835f1c6f17378b8b1}{serializuj}} (const std\+::string \&nazwa\+Pliku) const
+\begin{DoxyCompactList}\small\item\em Serialize the loop to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_petla_u_a_r_a9377d8494feb5dc16fe979197801897f}{deserializuj}} (const std\+::string \&nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Deserialize the loop from a file. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_petla_u_a_r_a13bdd6cbc20a32f51ef0a3acfaaf8f02}{pobierz\+Typy\+Komponentow}} () const
+\begin{DoxyCompactList}\small\item\em Get list of component types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a control loop composed of multiple SISO components. 
+
+Supports both open-\/loop and closed-\/loop operation, and allows dynamic composition of components 
+
+\label{doc-func-members}
+\Hypertarget{class_petla_u_a_r_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_petla_u_a_r_a9377d8494feb5dc16fe979197801897f}\index{PetlaUAR@{PetlaUAR}!deserializuj@{deserializuj}}
+\index{deserializuj@{deserializuj}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{deserializuj()}{deserializuj()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_a9377d8494feb5dc16fe979197801897f} 
+void Petla\+UAR\+::deserializuj (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption})}
+
+
+
+Deserialize the loop from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Source file path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_petla_u_a_r_a27ac5205a6323c6a7d071d9be4361bee}\index{PetlaUAR@{PetlaUAR}!dodajKomponent@{dodajKomponent}}
+\index{dodajKomponent@{dodajKomponent}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{dodajKomponent()}{dodajKomponent()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_a27ac5205a6323c6a7d071d9be4361bee} 
+void Petla\+UAR\+::dodaj\+Komponent (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt_s_i_s_o}{Obiekt\+SISO}} $>$}]{obiekt}{, }\item[{const std\+::string \&}]{typ}{}\end{DoxyParamCaption})}
+
+
+
+Add a new component to the loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & Component to add \\
+\hline
+{\em typ} & Type identifier of the component \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_petla_u_a_r_aac7579df02bc3689fd7483b43e793e90}\index{PetlaUAR@{PetlaUAR}!dodajKomponentNaPozycji@{dodajKomponentNaPozycji}}
+\index{dodajKomponentNaPozycji@{dodajKomponentNaPozycji}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{dodajKomponentNaPozycji()}{dodajKomponentNaPozycji()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_aac7579df02bc3689fd7483b43e793e90} 
+void Petla\+UAR\+::dodaj\+Komponent\+Na\+Pozycji (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt_s_i_s_o}{Obiekt\+SISO}} $>$}]{obiekt}{, }\item[{size\+\_\+t}]{index}{, }\item[{const std\+::string \&}]{typ}{}\end{DoxyParamCaption})}
+
+
+
+Insert a component at a specific position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & Component to add \\
+\hline
+{\em index} & Position in the loop \\
+\hline
+{\em typ} & Type identifier of the component \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_petla_u_a_r_a13bdd6cbc20a32f51ef0a3acfaaf8f02}\index{PetlaUAR@{PetlaUAR}!pobierzTypyKomponentow@{pobierzTypyKomponentow}}
+\index{pobierzTypyKomponentow@{pobierzTypyKomponentow}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{pobierzTypyKomponentow()}{pobierzTypyKomponentow()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_a13bdd6cbc20a32f51ef0a3acfaaf8f02} 
+std\+::vector$<$ std\+::string $>$ Petla\+UAR\+::pobierz\+Typy\+Komponentow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get list of component types. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ Vector of type names 
+\end{DoxyReturn}
+\Hypertarget{class_petla_u_a_r_ab5f2842bd9a7736835f1c6f17378b8b1}\index{PetlaUAR@{PetlaUAR}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_ab5f2842bd9a7736835f1c6f17378b8b1} 
+void Petla\+UAR\+::serializuj (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+Pliku}{}\end{DoxyParamCaption}) const}
+
+
+
+Serialize the loop to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & Target file path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_petla_u_a_r_adab9510fae15086640c1ecfea5fa5446}\index{PetlaUAR@{PetlaUAR}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_adab9510fae15086640c1ecfea5fa5446} 
+double Petla\+UAR\+::symuluj (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate the loop response for given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Input value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Output value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_obiekt_s_i_s_o_afaa0de278c2cafa27902026a01537809}{Obiekt\+SISO}}.
+
+\Hypertarget{class_petla_u_a_r_a0151672321da9c7484b84a75069d8bc6}\index{PetlaUAR@{PetlaUAR}!ustawZamknieta@{ustawZamknieta}}
+\index{ustawZamknieta@{ustawZamknieta}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{ustawZamknieta()}{ustawZamknieta()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_a0151672321da9c7484b84a75069d8bc6} 
+void Petla\+UAR\+::ustaw\+Zamknieta (\begin{DoxyParamCaption}\item[{bool}]{stan}{}\end{DoxyParamCaption})}
+
+
+
+Set loop mode to open or closed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stan} & True for closed-\/loop, false for open-\/loop \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_petla_u_a_r_aef634112c3fe4c4e30c81e3b9ceec83f}\index{PetlaUAR@{PetlaUAR}!usunKomponent@{usunKomponent}}
+\index{usunKomponent@{usunKomponent}!PetlaUAR@{PetlaUAR}}
+\doxysubsubsection{\texorpdfstring{usunKomponent()}{usunKomponent()}}
+{\footnotesize\ttfamily \label{class_petla_u_a_r_aef634112c3fe4c4e30c81e3b9ceec83f} 
+void Petla\+UAR\+::usun\+Komponent (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Remove a component from the loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the component to remove \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_petla_u_a_r_8h}{Petla\+UAR.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Petla\+UAR.\+cpp\end{DoxyCompactItemize}

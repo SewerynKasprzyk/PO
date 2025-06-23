@@ -1,0 +1,15 @@
+#include "SygnalStaly.h"
+
+SygnalStaly::SygnalStaly(double w) : wartosc(w) {}
+
+double SygnalStaly::symuluj(int t) {
+    return this->wartosc;
+}
+
+void SygnalStaly::serializuj(std::ostream& out) const {
+    out << "SygnalStaly " << this->wartosc << " ";
+}
+
+std::unique_ptr<Sygnal> SygnalStaly::klonuj() const {
+    return std::make_unique<SygnalStaly>(wartosc);
+}

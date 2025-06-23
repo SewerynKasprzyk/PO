@@ -1,0 +1,3 @@
+typ=PetlaUAR
+zamknieta=1
+komponenty=0

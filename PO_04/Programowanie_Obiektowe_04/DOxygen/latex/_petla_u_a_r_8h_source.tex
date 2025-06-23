@@ -1,0 +1,39 @@
+\doxysection{Petla\+UAR.\+h}
+\hypertarget{_petla_u_a_r_8h_source}{}\label{_petla_u_a_r_8h_source}\index{Programowanie\_Obiektowe\_04/PetlaUAR.h@{Programowanie\_Obiektowe\_04/PetlaUAR.h}}
+\mbox{\hyperlink{_petla_u_a_r_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obiekt_s_i_s_o_8h}{ObiektSISO.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_petla_u_a_r}{PetlaUAR}}\ :\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obiekt_s_i_s_o}{ObiektSISO}}\ }
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<std::unique\_ptr<ObiektSISO>>\ obiekty;\ }
+\DoxyCodeLine{00019\ \ \ \ \ std::vector<std::string>\ typy;\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ zamknieta\ =\ \textcolor{keyword}{true};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{double}\ poprzednieWyjscie\ =\ 0.0;\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_petla_u_a_r_adab9510fae15086640c1ecfea5fa5446}{symuluj}}(\textcolor{keywordtype}{double}\ x)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_a0151672321da9c7484b84a75069d8bc6}{ustawZamknieta}}(\textcolor{keywordtype}{bool}\ stan);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_a27ac5205a6323c6a7d071d9be4361bee}{dodajKomponent}}(std::unique\_ptr<ObiektSISO>\ obiekt,\ \textcolor{keyword}{const}\ std::string\&\ typ);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_aac7579df02bc3689fd7483b43e793e90}{dodajKomponentNaPozycji}}(std::unique\_ptr<ObiektSISO>\ obiekt,\ \textcolor{keywordtype}{size\_t}\ index,\ \textcolor{keyword}{const}\ std::string\&\ typ);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_aef634112c3fe4c4e30c81e3b9ceec83f}{usunKomponent}}(\textcolor{keywordtype}{size\_t}\ index);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_ab5f2842bd9a7736835f1c6f17378b8b1}{serializuj}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_petla_u_a_r_a9377d8494feb5dc16fe979197801897f}{deserializuj}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_petla_u_a_r_a13bdd6cbc20a32f51ef0a3acfaaf8f02}{pobierzTypyKomponentow}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \};}
+
+\end{DoxyCode}

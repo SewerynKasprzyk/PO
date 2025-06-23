@@ -1,0 +1,4 @@
+LiczbaKrokow=200
+Zamknieta=false
+PetlaPlik=test_config.txt_petla.txt
+GeneratorPlik=test_config.txt_generator.txt

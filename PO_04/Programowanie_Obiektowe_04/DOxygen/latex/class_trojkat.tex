@@ -1,0 +1,58 @@
+\doxysection{Trojkat Class Reference}
+\hypertarget{class_trojkat}{}\label{class_trojkat}\index{Trojkat@{Trojkat}}
+
+
+Inheritance diagram for Trojkat\+:
+% FIG 0
+
+
+Collaboration diagram for Trojkat\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_trojkat_a86427b83b65e6b3e99083da8de9559d2}\label{class_trojkat_a86427b83b65e6b3e99083da8de9559d2} 
+{\bfseries Trojkat} (double a, int o, double w)
+\item 
+\Hypertarget{class_trojkat_a1765406ca776ff180d3bcdcbd3e9118b}\label{class_trojkat_a1765406ca776ff180d3bcdcbd3e9118b} 
+double {\bfseries generuj} (int t) override
+\item 
+void \mbox{\hyperlink{class_trojkat_ac8ac73effddb07b6691ba58ec7702067}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sygnal}{Sygnal}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{symuluj}} (int t)=0
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{klonuj}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_trojkat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trojkat_ac8ac73effddb07b6691ba58ec7702067}\index{Trojkat@{Trojkat}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!Trojkat@{Trojkat}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_trojkat_ac8ac73effddb07b6691ba58ec7702067} 
+void Trojkat\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{Sygnal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Trojkat.\+h\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Trojkat.\+cpp\end{DoxyCompactItemize}

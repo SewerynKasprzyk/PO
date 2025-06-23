@@ -1,0 +1,3 @@
+typ=ObiektStatyczny
+dolny=-1
+gorny=1

@@ -1,0 +1,122 @@
+\doxysection{Sygnal\+Staly Class Reference}
+\hypertarget{class_sygnal_staly}{}\label{class_sygnal_staly}\index{SygnalStaly@{SygnalStaly}}
+
+
+Constant value signal.  
+
+
+
+
+{\ttfamily \#include $<$Sygnal\+Staly.\+h$>$}
+
+
+
+Inheritance diagram for Sygnal\+Staly\+:
+% FIG 0
+
+
+Collaboration diagram for Sygnal\+Staly\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sygnal_staly_a6ea6a67ce205c0de717633f358b1ec23}{Sygnal\+Staly}} (double w=0.\+0)
+\begin{DoxyCompactList}\small\item\em Construct a new constant signal. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sygnal_staly_a22aa76ef6cb0d57b7714de02884375da}{symuluj}} (int t) override
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sygnal_staly_a7fb24bc52b613b65e5f3b292b957b895}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_sygnal_staly_ab6e3404625beeb1af1c387cd31cb62fa}{klonuj}} () const override
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constant value signal. 
+
+\label{doc-constructors}
+\Hypertarget{class_sygnal_staly_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sygnal_staly_a6ea6a67ce205c0de717633f358b1ec23}\index{SygnalStaly@{SygnalStaly}!SygnalStaly@{SygnalStaly}}
+\index{SygnalStaly@{SygnalStaly}!SygnalStaly@{SygnalStaly}}
+\doxysubsubsection{\texorpdfstring{SygnalStaly()}{SygnalStaly()}}
+{\footnotesize\ttfamily \label{class_sygnal_staly_a6ea6a67ce205c0de717633f358b1ec23} 
+Sygnal\+Staly\+::\+Sygnal\+Staly (\begin{DoxyParamCaption}\item[{double}]{w}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new constant signal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Signal value (default 0.\+0) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_sygnal_staly_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sygnal_staly_ab6e3404625beeb1af1c387cd31cb62fa}\index{SygnalStaly@{SygnalStaly}!klonuj@{klonuj}}
+\index{klonuj@{klonuj}!SygnalStaly@{SygnalStaly}}
+\doxysubsubsection{\texorpdfstring{klonuj()}{klonuj()}}
+{\footnotesize\ttfamily \label{class_sygnal_staly_ab6e3404625beeb1af1c387cd31cb62fa} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ Sygnal\+Staly\+::klonuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clone the signal object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Copy of the signal 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{Sygnal}}.
+
+\Hypertarget{class_sygnal_staly_a7fb24bc52b613b65e5f3b292b957b895}\index{SygnalStaly@{SygnalStaly}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!SygnalStaly@{SygnalStaly}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_sygnal_staly_a7fb24bc52b613b65e5f3b292b957b895} 
+void Sygnal\+Staly\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{Sygnal}}.
+
+\Hypertarget{class_sygnal_staly_a22aa76ef6cb0d57b7714de02884375da}\index{SygnalStaly@{SygnalStaly}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!SygnalStaly@{SygnalStaly}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_sygnal_staly_a22aa76ef6cb0d57b7714de02884375da} 
+double Sygnal\+Staly\+::symuluj (\begin{DoxyParamCaption}\item[{int}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate signal value at time t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Signal value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{Sygnal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_sygnal_staly_8h}{Sygnal\+Staly.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Sygnal\+Staly.\+cpp\end{DoxyCompactItemize}

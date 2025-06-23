@@ -1,0 +1,5 @@
+typ=PetlaUAR
+zamknieta=1
+komponenty=1
+plik0=komponent0.txt
+typ0=RegulatorPID

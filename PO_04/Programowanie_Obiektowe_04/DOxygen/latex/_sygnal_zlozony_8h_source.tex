@@ -1,0 +1,17 @@
+\doxysection{Sygnal\+Zlozony.\+h}
+\hypertarget{_sygnal_zlozony_8h_source}{}\label{_sygnal_zlozony_8h_source}\index{Programowanie\_Obiektowe\_04/SygnalZlozony.h@{Programowanie\_Obiektowe\_04/SygnalZlozony.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }SygnalZlozony\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sygnal}{Sygnal}}\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ std::vector<std::unique\_ptr<Sygnal>>\ sygnaly;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ SygnalZlozony(std::vector<std::unique\_ptr<Sygnal>>\ s);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{double}\ generuj(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sygnal_zlozony_acb2c57f248110e7e94e473055cd88d1d}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00011\ \};}
+
+\end{DoxyCode}

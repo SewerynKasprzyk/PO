@@ -1,0 +1,1 @@
+DekoratorProstokat 0.5 20 0.3 DekoratorSinus 1 0.1 SygnalStaly 0 

@@ -1,0 +1,24 @@
+\doxysection{Dekorator\+Szum\+Bialy.\+h}
+\hypertarget{_dekorator_szum_bialy_8h_source}{}\label{_dekorator_szum_bialy_8h_source}\index{Programowanie\_Obiektowe\_04/DekoratorSzumBialy.h@{Programowanie\_Obiektowe\_04/DekoratorSzumBialy.h}}
+\mbox{\hyperlink{_dekorator_szum_bialy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dekorator_8h}{Dekorator.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_szum_bialy_a9b75d7ebfad3e8c032346192825a119a}{DekoratorSzumBialy}}\ :\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ odchylenie;\ }
+\DoxyCodeLine{00016\ \ \ \ \ std::default\_random\_engine\ generator;\ }
+\DoxyCodeLine{00017\ \ \ \ \ std::normal\_distribution<double>\ rozklad;\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_dekorator_szum_bialy_a9b75d7ebfad3e8c032346192825a119a}{DekoratorSzumBialy}}(std::unique\_ptr<Sygnal>\ k,\ \textcolor{keywordtype}{double}\ odch);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_szum_bialy_a7307ae751677fc5f660d6be0f4a38c67}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_szum_bialy_adf591683925b26d83e2df007c7716b7b}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00028\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_szum_bialy_a8232adc7a4718326fb13ba9f3c0a525b}{klonuj}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,18 @@
+\doxysection{Trojkat.\+h}
+\hypertarget{_trojkat_8h_source}{}\label{_trojkat_8h_source}\index{Programowanie\_Obiektowe\_04/Trojkat.h@{Programowanie\_Obiektowe\_04/Trojkat.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }Trojkat\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_sygnal}{Sygnal}}\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{double}\ amplituda;}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ okres;}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{double}\ wypelnienie;\ \ \textcolor{comment}{//\ stosunek\ czasu\ narastania\ do\ ca³ego\ okresu\ (0-\/1)}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ Trojkat(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{int}\ o,\ \textcolor{keywordtype}{double}\ w);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ generuj(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trojkat_ac8ac73effddb07b6691ba58ec7702067}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00012\ \};}
+
+\end{DoxyCode}

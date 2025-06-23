@@ -1,0 +1,137 @@
+\doxysection{Dekorator\+Sinus Class Reference}
+\hypertarget{class_dekorator_sinus}{}\label{class_dekorator_sinus}\index{DekoratorSinus@{DekoratorSinus}}
+
+
+Sinusoidal wave signal decorator.  
+
+
+
+
+{\ttfamily \#include $<$Dekorator\+Sinus.\+h$>$}
+
+
+
+Inheritance diagram for Dekorator\+Sinus\+:
+% FIG 0
+
+
+Collaboration diagram for Dekorator\+Sinus\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_sinus_ac913b0af10b27dc42331177681f5dc9c}{Dekorator\+Sinus}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k, double amp, double czest)
+\begin{DoxyCompactList}\small\item\em Construct a new sinusoidal decorator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dekorator_sinus_a14fb85b870dceac980faf5d823af77cd}{symuluj}} (int t) override
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dekorator_sinus_a84b450b7ca4cb984235e25b839cd87e2}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_sinus_af87d43dfa0245b6be812de9e4ccfcaf8}{klonuj}} () const override
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_dekorator}{Dekorator} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_af343b13347ed5649d5b98be51667fa20}{komponent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sinusoidal wave signal decorator. 
+
+\label{doc-constructors}
+\Hypertarget{class_dekorator_sinus_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dekorator_sinus_ac913b0af10b27dc42331177681f5dc9c}\index{DekoratorSinus@{DekoratorSinus}!DekoratorSinus@{DekoratorSinus}}
+\index{DekoratorSinus@{DekoratorSinus}!DekoratorSinus@{DekoratorSinus}}
+\doxysubsubsection{\texorpdfstring{DekoratorSinus()}{DekoratorSinus()}}
+{\footnotesize\ttfamily \label{class_dekorator_sinus_ac913b0af10b27dc42331177681f5dc9c} 
+Dekorator\+Sinus\+::\+Dekorator\+Sinus (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$}]{k}{, }\item[{double}]{amp}{, }\item[{double}]{czest}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new sinusoidal decorator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Signal to decorate \\
+\hline
+{\em amp} & Amplitude \\
+\hline
+{\em czest} & Frequency \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dekorator_sinus_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dekorator_sinus_af87d43dfa0245b6be812de9e4ccfcaf8}\index{DekoratorSinus@{DekoratorSinus}!klonuj@{klonuj}}
+\index{klonuj@{klonuj}!DekoratorSinus@{DekoratorSinus}}
+\doxysubsubsection{\texorpdfstring{klonuj()}{klonuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_sinus_af87d43dfa0245b6be812de9e4ccfcaf8} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ Dekorator\+Sinus\+::klonuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clone the signal object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Copy of the signal 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_addcad58e14a3da99c386b6517befa4ec}{Dekorator}}.
+
+\Hypertarget{class_dekorator_sinus_a84b450b7ca4cb984235e25b839cd87e2}\index{DekoratorSinus@{DekoratorSinus}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!DekoratorSinus@{DekoratorSinus}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_sinus_a84b450b7ca4cb984235e25b839cd87e2} 
+void Dekorator\+Sinus\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_dekorator_adf6097aa3320ecdd2a234c0e41bd7a0c}{Dekorator}}.
+
+\Hypertarget{class_dekorator_sinus_a14fb85b870dceac980faf5d823af77cd}\index{DekoratorSinus@{DekoratorSinus}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!DekoratorSinus@{DekoratorSinus}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_dekorator_sinus_a14fb85b870dceac980faf5d823af77cd} 
+double Dekorator\+Sinus\+::symuluj (\begin{DoxyParamCaption}\item[{int}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate signal value at time t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Signal value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_a667f8b465e1785c893432b585c6c77a2}{Dekorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_dekorator_sinus_8h}{Dekorator\+Sinus.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Dekorator\+Sinus.\+cpp\end{DoxyCompactItemize}

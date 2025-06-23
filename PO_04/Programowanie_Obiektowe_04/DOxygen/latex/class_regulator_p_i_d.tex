@@ -1,0 +1,129 @@
+\doxysection{Regulator\+PID Class Reference}
+\hypertarget{class_regulator_p_i_d}{}\label{class_regulator_p_i_d}\index{RegulatorPID@{RegulatorPID}}
+
+
+PID controller with configurable modes (P/\+PI/\+PID)  
+
+
+
+
+{\ttfamily \#include $<$Regulator\+PID.\+h$>$}
+
+
+
+Inheritance diagram for Regulator\+PID\+:
+% FIG 0
+
+
+Collaboration diagram for Regulator\+PID\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}{Regulator\+PID}} (double k)
+\begin{DoxyCompactList}\small\item\em P-\/only controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_regulator_p_i_d_a57b16043b0f9dccc28da7c288e2a2d86}{Regulator\+PID}} (double k, double Ti)
+\begin{DoxyCompactList}\small\item\em PI controller. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_regulator_p_i_d_a43eafb8f6efc0226a68fc24bdf0d029e}{Regulator\+PID}} (double k, double Ti, double Td)
+\begin{DoxyCompactList}\small\item\em Full PID controller. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_regulator_p_i_d_a95f8ff7746e07b450013c4707aa4cc1a}{symuluj}} (double uchyb) override
+\begin{DoxyCompactList}\small\item\em Simulate system output for given input. \end{DoxyCompactList}\item 
+\Hypertarget{class_regulator_p_i_d_a137bbb935b70165e1f6f17f6becf94ff}\label{class_regulator_p_i_d_a137bbb935b70165e1f6f17f6becf94ff} 
+{\bfseries Regulator\+PID} (const std\+::string \&plik)
+\begin{DoxyCompactList}\small\item\em Konstruktor z pliku. \end{DoxyCompactList}\item 
+\Hypertarget{class_regulator_p_i_d_a9d74267b0547cce0e95d91321cad6c0a}\label{class_regulator_p_i_d_a9d74267b0547cce0e95d91321cad6c0a} 
+void {\bfseries serializuj} (const std\+::string \&plik) const
+\begin{DoxyCompactList}\small\item\em Zapis do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PID controller with configurable modes (P/\+PI/\+PID) 
+
+\label{doc-constructors}
+\Hypertarget{class_regulator_p_i_d_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2}\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\doxysubsubsection{\texorpdfstring{RegulatorPID()}{RegulatorPID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_regulator_p_i_d_aad5777a4b632166f4cdcf08157cce3e2} 
+Regulator\+PID\+::\+Regulator\+PID (\begin{DoxyParamCaption}\item[{double}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+P-\/only controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Proportional gain \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_regulator_p_i_d_a57b16043b0f9dccc28da7c288e2a2d86}\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\doxysubsubsection{\texorpdfstring{RegulatorPID()}{RegulatorPID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_regulator_p_i_d_a57b16043b0f9dccc28da7c288e2a2d86} 
+Regulator\+PID\+::\+Regulator\+PID (\begin{DoxyParamCaption}\item[{double}]{k}{, }\item[{double}]{Ti}{}\end{DoxyParamCaption})}
+
+
+
+PI controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Proportional gain \\
+\hline
+{\em Ti} & Integral time \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_regulator_p_i_d_a43eafb8f6efc0226a68fc24bdf0d029e}\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\index{RegulatorPID@{RegulatorPID}!RegulatorPID@{RegulatorPID}}
+\doxysubsubsection{\texorpdfstring{RegulatorPID()}{RegulatorPID()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_regulator_p_i_d_a43eafb8f6efc0226a68fc24bdf0d029e} 
+Regulator\+PID\+::\+Regulator\+PID (\begin{DoxyParamCaption}\item[{double}]{k}{, }\item[{double}]{Ti}{, }\item[{double}]{Td}{}\end{DoxyParamCaption})}
+
+
+
+Full PID controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Proportional gain \\
+\hline
+{\em Ti} & Integral time \\
+\hline
+{\em Td} & Derivative time \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_regulator_p_i_d_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_regulator_p_i_d_a95f8ff7746e07b450013c4707aa4cc1a}\index{RegulatorPID@{RegulatorPID}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!RegulatorPID@{RegulatorPID}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_regulator_p_i_d_a95f8ff7746e07b450013c4707aa4cc1a} 
+double Regulator\+PID\+::symuluj (\begin{DoxyParamCaption}\item[{double}]{u}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate system output for given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & Input value ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Output value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_obiekt_s_i_s_o_afaa0de278c2cafa27902026a01537809}{Obiekt\+SISO}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_regulator_p_i_d_8h}{Regulator\+PID.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Regulator\+PID.\+cpp\end{DoxyCompactItemize}

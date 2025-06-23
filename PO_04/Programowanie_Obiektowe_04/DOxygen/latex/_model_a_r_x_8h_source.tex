@@ -1,0 +1,53 @@
+\doxysection{Model\+ARX.\+h}
+\hypertarget{_model_a_r_x_8h_source}{}\label{_model_a_r_x_8h_source}\index{Programowanie\_Obiektowe\_04/ModelARX.h@{Programowanie\_Obiektowe\_04/ModelARX.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_obiekt_s_i_s_o_8h}{ObiektSISO.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <deque>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0}{ModelARX}}\ :\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_obiekt_s_i_s_o}{ObiektSISO}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0}{ModelARX}}(std::vector<double>\ a,\ std::vector<double>\ b,\ \textcolor{keywordtype}{unsigned}\ k,\ \textcolor{keywordtype}{double}\ zmienna);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_model_a_r_x_afa799c6f08f3b6dc309ab21d979a7ca0}{ModelARX}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_model_a_r_x_a2bf5d466e1ccf49bc6cae2bbc236770e}{symuluj}}(\textcolor{keywordtype}{double}\ u)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_a_r_x_a6af8f673e169e81692692d52176bb04a}{serializuj}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<double>\ a;\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::vector<double>\ b;\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::deque<double>\ u;\ }
+\DoxyCodeLine{00050\ \ \ \ \ std::deque<double>\ y;\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ k;\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Noise-\/related\ members}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{double}\ mocZaklocenia;\ }
+\DoxyCodeLine{00056\ \ \ \ \ std::default\_random\_engine\ generator;\ }
+\DoxyCodeLine{00057\ \ \ \ \ std::normal\_distribution<double>\ rozklad\{\ 0.0,\ 1.0\ \};\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Serialization\ helpers}}
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<double>\ wspolczynnikiA;\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::vector<double>\ wspolczynnikiB;\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{double}\ generujZaklocenie()\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rozklad(generator)\ *\ mocZaklocenia;}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ \ \ \ \ std::vector<double>\ parsujListe(\textcolor{keyword}{const}\ std::string\&\ linia);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{double}\ zaklocenieTymczasowe()}
+\DoxyCodeLine{00085\ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0;}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,135 @@
+\doxysection{Dekorator\+Nasycenie Class Reference}
+\hypertarget{class_dekorator_nasycenie}{}\label{class_dekorator_nasycenie}\index{DekoratorNasycenie@{DekoratorNasycenie}}
+
+
+Saturation decorator limits signal amplitude to a maximum value.  
+
+
+
+
+{\ttfamily \#include $<$Dekorator\+Nasycenie.\+h$>$}
+
+
+
+Inheritance diagram for Dekorator\+Nasycenie\+:
+% FIG 0
+
+
+Collaboration diagram for Dekorator\+Nasycenie\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_nasycenie_ab98dd021178892aaa430e3c9d0ab7abe}{Dekorator\+Nasycenie}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k, double max)
+\begin{DoxyCompactList}\small\item\em Construct a new saturation decorator. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_dekorator_nasycenie_a521551ee6a982b79d5e2c36a1661535c}{symuluj}} (int t) override
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dekorator_nasycenie_a49adea202b3304b1c7b1179726225b56}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_nasycenie_a67f0b68db008ba15dfb5101e817cb9c8}{klonuj}} () const override
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ k)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_dekorator}{Dekorator} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_dekorator}{Dekorator}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_dekorator_af343b13347ed5649d5b98be51667fa20}{komponent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Saturation decorator limits signal amplitude to a maximum value. 
+
+\label{doc-constructors}
+\Hypertarget{class_dekorator_nasycenie_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dekorator_nasycenie_ab98dd021178892aaa430e3c9d0ab7abe}\index{DekoratorNasycenie@{DekoratorNasycenie}!DekoratorNasycenie@{DekoratorNasycenie}}
+\index{DekoratorNasycenie@{DekoratorNasycenie}!DekoratorNasycenie@{DekoratorNasycenie}}
+\doxysubsubsection{\texorpdfstring{DekoratorNasycenie()}{DekoratorNasycenie()}}
+{\footnotesize\ttfamily \label{class_dekorator_nasycenie_ab98dd021178892aaa430e3c9d0ab7abe} 
+Dekorator\+Nasycenie\+::\+Dekorator\+Nasycenie (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$}]{k}{, }\item[{double}]{max}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new saturation decorator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Signal to decorate \\
+\hline
+{\em max} & Maximum allowed value \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_dekorator_nasycenie_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dekorator_nasycenie_a67f0b68db008ba15dfb5101e817cb9c8}\index{DekoratorNasycenie@{DekoratorNasycenie}!klonuj@{klonuj}}
+\index{klonuj@{klonuj}!DekoratorNasycenie@{DekoratorNasycenie}}
+\doxysubsubsection{\texorpdfstring{klonuj()}{klonuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_nasycenie_a67f0b68db008ba15dfb5101e817cb9c8} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ Dekorator\+Nasycenie\+::klonuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clone the signal object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::unique\+\_\+ptr$<$\+Sygnal$>$ Copy of the signal 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_addcad58e14a3da99c386b6517befa4ec}{Dekorator}}.
+
+\Hypertarget{class_dekorator_nasycenie_a49adea202b3304b1c7b1179726225b56}\index{DekoratorNasycenie@{DekoratorNasycenie}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!DekoratorNasycenie@{DekoratorNasycenie}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_dekorator_nasycenie_a49adea202b3304b1c7b1179726225b56} 
+void Dekorator\+Nasycenie\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_dekorator_adf6097aa3320ecdd2a234c0e41bd7a0c}{Dekorator}}.
+
+\Hypertarget{class_dekorator_nasycenie_a521551ee6a982b79d5e2c36a1661535c}\index{DekoratorNasycenie@{DekoratorNasycenie}!symuluj@{symuluj}}
+\index{symuluj@{symuluj}!DekoratorNasycenie@{DekoratorNasycenie}}
+\doxysubsubsection{\texorpdfstring{symuluj()}{symuluj()}}
+{\footnotesize\ttfamily \label{class_dekorator_nasycenie_a521551ee6a982b79d5e2c36a1661535c} 
+double Dekorator\+Nasycenie\+::symuluj (\begin{DoxyParamCaption}\item[{int}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulate signal value at time t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double Signal value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_dekorator_a667f8b465e1785c893432b585c6c77a2}{Dekorator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/\mbox{\hyperlink{_dekorator_nasycenie_8h}{Dekorator\+Nasycenie.\+h}}\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Dekorator\+Nasycenie.\+cpp\end{DoxyCompactItemize}

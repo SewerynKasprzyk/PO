@@ -1,0 +1,21 @@
+\doxysection{Dekorator\+Nasycenie.\+h}
+\hypertarget{_dekorator_nasycenie_8h_source}{}\label{_dekorator_nasycenie_8h_source}\index{Programowanie\_Obiektowe\_04/DekoratorNasycenie.h@{Programowanie\_Obiektowe\_04/DekoratorNasycenie.h}}
+\mbox{\hyperlink{_dekorator_nasycenie_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dekorator_8h}{Dekorator.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_nasycenie_ab98dd021178892aaa430e3c9d0ab7abe}{DekoratorNasycenie}}\ :\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ max\_wartosc;\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_dekorator_nasycenie_ab98dd021178892aaa430e3c9d0ab7abe}{DekoratorNasycenie}}(std::unique\_ptr<Sygnal>\ k,\ \textcolor{keywordtype}{double}\ max);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_nasycenie_a521551ee6a982b79d5e2c36a1661535c}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_nasycenie_a49adea202b3304b1c7b1179726225b56}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_nasycenie_a67f0b68db008ba15dfb5101e817cb9c8}{klonuj}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00026\ \};}
+
+\end{DoxyCode}

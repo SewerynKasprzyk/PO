@@ -1,0 +1,23 @@
+\doxysection{Dekorator\+Prostokat.\+h}
+\hypertarget{_dekorator_prostokat_8h_source}{}\label{_dekorator_prostokat_8h_source}\index{Programowanie\_Obiektowe\_04/DekoratorProstokat.h@{Programowanie\_Obiektowe\_04/DekoratorProstokat.h}}
+\mbox{\hyperlink{_dekorator_prostokat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dekorator_8h}{Dekorator.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dekorator_prostokat_a4c3c9d01eec26544b02bced6c690ed77}{DekoratorProstokat}}\ :\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dekorator_aa8ae9c9f936b7ff2633f0fed5999fa61}{Dekorator}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ amplituda;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ okres;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ wypelnienie;\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_dekorator_prostokat_a4c3c9d01eec26544b02bced6c690ed77}{DekoratorProstokat}}(std::unique\_ptr<Sygnal>\ k,\ \textcolor{keywordtype}{double}\ amp,\ \textcolor{keywordtype}{int}\ okr,\ \textcolor{keywordtype}{double}\ wyp);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_dekorator_prostokat_a58de6c33367365151b3b6f83e5564ebc}{symuluj}}(\textcolor{keywordtype}{int}\ t)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dekorator_prostokat_a69fd7ad665eacbdac3f40ea168c856e5}{serializuj}}(std::ostream\&\ out)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00029\ \ \ \ \ std::unique\_ptr<Sygnal>\ \mbox{\hyperlink{class_dekorator_prostokat_ad762b3cc141f98cff2e74d4754746344}{klonuj}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

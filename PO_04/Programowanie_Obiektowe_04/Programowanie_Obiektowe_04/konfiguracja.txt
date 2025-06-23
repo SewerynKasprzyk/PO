@@ -1,0 +1,4 @@
+LiczbaKrokow=100
+Zamknieta=true
+PetlaPlik=konfiguracja.txt_petla.txt
+GeneratorPlik=konfiguracja.txt_generator.txt

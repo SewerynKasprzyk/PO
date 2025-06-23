@@ -1,0 +1,39 @@
+\doxysection{Konfiguracja.\+h}
+\hypertarget{_konfiguracja_8h_source}{}\label{_konfiguracja_8h_source}\index{Programowanie\_Obiektowe\_04/Konfiguracja.h@{Programowanie\_Obiektowe\_04/Konfiguracja.h}}
+\mbox{\hyperlink{_konfiguracja_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_petla_u_a_r_8h}{PetlaUAR.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sygnal_8h}{Sygnal.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_konfiguracja_a8dcf2177319b9b457898d083b1309020}{Konfiguracja}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ std::unique\_ptr<PetlaUAR>\ petla;\ }
+\DoxyCodeLine{00018\ \ \ \ \ std::unique\_ptr<Sygnal>\ generator;\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ liczbaKrokow;\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ zamknieta;\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_konfiguracja_a8dcf2177319b9b457898d083b1309020}{Konfiguracja}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_konfiguracja_a8ce4894b6144eda0dff0211ac0e0535d}{wczytaj}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_konfiguracja_adbeb8aab2487cb5bc875dddca9fe2553}{zapisz}}(\textcolor{keyword}{const}\ std::string\&\ nazwaPliku)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ ustawPetle(std::unique\_ptr<PetlaUAR>\ nowaPetla);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ ustawGenerator(std::unique\_ptr<Sygnal>\ nowyGenerator);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ ustawLiczbeKrokow(\textcolor{keywordtype}{int}\ kroki);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ ustawZamknieta(\textcolor{keywordtype}{bool}\ stan);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_petla_u_a_r}{PetlaUAR}}*\ pobierzPetle()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_sygnal}{Sygnal}}*\ pobierzGenerator()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ pobierzLiczbeKrokow()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ czyZamknieta()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,58 @@
+\doxysection{Szum\+Bialy Class Reference}
+\hypertarget{class_szum_bialy}{}\label{class_szum_bialy}\index{SzumBialy@{SzumBialy}}
+
+
+Inheritance diagram for Szum\+Bialy\+:
+% FIG 0
+
+
+Collaboration diagram for Szum\+Bialy\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_szum_bialy_ac29896be391cf50886e500db0535edc1}\label{class_szum_bialy_ac29896be391cf50886e500db0535edc1} 
+{\bfseries Szum\+Bialy} (double srednia, double odchylenie)
+\item 
+\Hypertarget{class_szum_bialy_a5ec91882e849fcf0d86e99c93bc7a520}\label{class_szum_bialy_a5ec91882e849fcf0d86e99c93bc7a520} 
+double {\bfseries generuj} (int t) override
+\item 
+void \mbox{\hyperlink{class_szum_bialy_a14df8f3eb96627fd6b46461f65bea2b6}{serializuj}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Serialize signal to output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sygnal}{Sygnal}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{class_sygnal_ae46f523699f3346a704593a3bde26a07}{symuluj}} (int t)=0
+\begin{DoxyCompactList}\small\item\em Simulate signal value at time t. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_sygnal}{Sygnal}} $>$ \mbox{\hyperlink{class_sygnal_add3e2ae1b5ef025aa65ac025ce442170}{klonuj}} () const =0
+\begin{DoxyCompactList}\small\item\em Clone the signal object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_szum_bialy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_szum_bialy_a14df8f3eb96627fd6b46461f65bea2b6}\index{SzumBialy@{SzumBialy}!serializuj@{serializuj}}
+\index{serializuj@{serializuj}!SzumBialy@{SzumBialy}}
+\doxysubsubsection{\texorpdfstring{serializuj()}{serializuj()}}
+{\footnotesize\ttfamily \label{class_szum_bialy_a14df8f3eb96627fd6b46461f65bea2b6} 
+void Szum\+Bialy\+::serializuj (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize signal to output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_sygnal_a530a80a3a5865954cf6a67b1b16df39e}{Sygnal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Szum\+Bialy.\+h\item 
+Programowanie\+\_\+\+Obiektowe\+\_\+04/Szum\+Bialy.\+cpp\end{DoxyCompactItemize}
